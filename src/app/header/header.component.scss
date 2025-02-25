@@ -1,12 +1,10 @@
 .home {
-    background-image: url('/pictures/dev2.jpg');
     min-height: 600px;
     width: auto;
     color: white;
-    padding-top: 15%;
-    // background: linear-gradient(rgba(0, 0, 0, 0.445),
-    //         rgba(0, 0, 0, 0.245)), url('/pictures\dev2.jpg');
-    // font-family: "Raleway";
+    padding-top: 10%;
+    background: linear-gradient(rgba(0, 0, 0, 0.445), rgba(0, 0, 0, 0.245)), url('/pictures/dev2.jpg');
+    font-family: "Raleway";
 
     // /* Center and scale the image nicely */
     background-position: center;
@@ -15,6 +13,6 @@
     text-align: center;
 }
 
-#name {
-    font-size: 60px;
-}
+// #name {
+//     font-size: 60px;
+// }
