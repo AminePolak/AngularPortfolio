@@ -1,18 +1,11 @@
 .home {
-    min-height: 600px;
-    width: auto;
+    height: 70vh;
     color: white;
-    padding-top: 10%;
     background: linear-gradient(rgba(0, 0, 0, 0.445), rgba(0, 0, 0, 0.245)), url('/pictures/dev2.jpg');
     font-family: "Raleway";
 
     // /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
-    text-align: center;
+    background-size: cover;
 }
-
-// #name {
-//     font-size: 60px;
-// }
