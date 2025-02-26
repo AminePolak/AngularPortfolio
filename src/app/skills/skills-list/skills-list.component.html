@@ -1,1 +1,3 @@
-<app-skills></app-skills>
+@for (skill of skills; track skill.title) {
+<app-skills [skill]="skill"></app-skills>
+}

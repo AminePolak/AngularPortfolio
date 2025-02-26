@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { NgbProgressbarModule } from '@ng-bootstrap/ng-bootstrap';
 import { Skill } from '../models/skill';
 import { skillsService } from '../services/skills.service';
@@ -11,12 +11,15 @@ import { skillsService } from '../services/skills.service';
   styleUrl: './skills.component.scss'
 })
 export class SkillsComponent implements OnInit {
-  skills!: Skill[];
+  @Input() skill!: Skill;
 
   constructor(private skillService: skillsService,
   ) { }
   ngOnInit(): void {
-    this.skills = this.skillService.getSkills();
-    
+    // this.skills = this.getSkill();    
   }
+
+  // private getSkill(){
+  //   this.skill = this.skillService.
+  // }
 }
