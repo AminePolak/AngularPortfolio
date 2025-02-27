@@ -11,8 +11,12 @@ export class skillsService{
         new Skill("C# / .net", 60),
         new Skill("Angular", 60),
         new Skill("Bootstrap", 75),
-        new Skill("Javascript", 60),
+        new Skill("Javasgggcript", 60),
         new Skill("Git/Github", 60),
+        new Skill("ddd/Github", 60),
+        new Skill("ddd/Github", 60),
+        new Skill("ddd/Github", 60),
+
     ];
 
     getSkills(): Skill[] {

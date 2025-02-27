@@ -1,3 +1,14 @@
-@for (skill of skills; track skill.title) {
-<app-skills [skill]="skill"></app-skills>
-}
+<div class="row d-flex justify-content-around pb-5">
+    <div class="col-4">
+        @for (skill of skills.slice(0, ((skills.length)/2)); track skill.title) {
+        <app-skills [skill]="skill"></app-skills>
+        }
+
+    </div>
+    <div class="col-4">
+        @for (skill of skills.slice(((skills.length)/2)+1); track skill.title) {
+        <app-skills [skill]="skill"></app-skills>
+        }
+
+    </div>
+</div>

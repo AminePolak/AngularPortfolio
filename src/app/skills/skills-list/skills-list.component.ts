@@ -16,5 +16,7 @@ export class SkillsListComponent implements OnInit {
 
   ngOnInit(): void {
     this.skills = this.skillsService.getSkills();
+
+    console.log(this.skills.length/2)
   }
 }
