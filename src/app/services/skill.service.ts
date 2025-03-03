@@ -4,7 +4,7 @@ import { Skill } from "../models/skill";
 @Injectable({
     providedIn: 'root'
 })
-export class skillsService{
+export class skillService{
     private skills: Skill[] = [
         new Skill("Html", 80),
         new Skill("css", 80),

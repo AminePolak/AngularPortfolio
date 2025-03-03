@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Formation } from '../models/formation';
 
 @Component({
   selector: 'app-formation',
@@ -7,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './formation.component.scss'
 })
 export class FormationComponent {
+  @Input() formation!: Formation;
 
 }
