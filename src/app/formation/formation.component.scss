@@ -20,36 +20,11 @@
     position: relative;
 }
 
-.main-timeline .timeline:before,
-.main-timeline .timeline:after {
+.timeline:before,
+.timeline:after {
     content: "";
     display: block;
     clear: both;
-}
-
-// .timeline:first-child:before,
-// .timeline:last-child:before {
-//     content: "";
-//     width: 11px;
-//     height: 11px;
-//     background: #cfcdcd;
-//     box-sizing: content-box;
-//     border: 5px solid #fff;
-//     box-shadow: 0 0 0 2px #cfcdcd;
-//     position: absolute;
-//     top: -54px;
-//     right: -11px;
-//     transform: rotate(45deg);
-// }
-
-// .timeline:last-child:before {
-//     top: auto;
-//     bottom: -54px;
-// }
-
-.timeline:last-child:nth-child(even):before {
-    right: auto;
-    left: -11px;
 }
 
 .timeline-icon {
@@ -156,24 +131,63 @@
     margin-top: 8px;
 }
 
-// .timeline:nth-child(2n),
-// .timeline:nth-child(2n) .timeline-content {
-//     float: right;
-//     text-align: left;
+//POUR METTRE LA CASE AU DEBUT DE TIMELINE
+// .timeline:first-child:before,
+// .timeline:last-child:before {
+//     content: "";
+//     width: 11px;
+//     height: 11px;
+//     background: #cfcdcd;
+//     box-sizing: content-box;
+//     border: 5px solid #fff;
+//     box-shadow: 0 0 0 2px #cfcdcd;
+//     position: absolute;
+//     top: -54px;
+//     right: -11px;
+//     transform: rotate(45deg);
 // }
 
-.timeline:nth-child(2n) .timeline-icon {
+//POUR METTRE LA CASE EN FIN DE TIMELINE
+// .timeline:last-child:before {
+//     top: auto;
+//     bottom: -54px;
+// }
+
+//je ne trouve pas
+.timeline:last-child:nth-child(even):before {
+    right: auto;
+    left: -11px;
+}
+
+.timeline:nth-child(2n),
+.timeline:nth-child(2n) .timeline-content {
+    float: right;
+    text-align: left;
+}
+
+.timeline:nth-child(even) .timeline-icon {
     right: 0;
     left: -12px;
 }
 
-// .timeline:nth-child(2n) .timeline-content:before {
-//     left: -7.3px;
-// }
+.timeline:nth-child(2n) .timeline-content:before {
+    left: -7.3px;
+}
 
-// .timeline:nth-child(2n) .timeline-content:after {
-//     left: -14%;
-// }
+.timeline:nth-child(2n) .timeline-content:after {
+    left: -14%;
+}
+
+:host-context(.odd){
+    float: right !important;
+    text-align: left !important;
+}
+
+
+
+
+
+
 
 // @media only screen and (max-width: 767px) {
 //     .main-timeline {

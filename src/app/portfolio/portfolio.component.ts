@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Portfolio } from '../models/portfolio';
 
 @Component({
   selector: 'app-portfolio',
@@ -6,6 +7,7 @@ import { Component } from '@angular/core';
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss'
 })
-export class PortfolioComponent {
 
+export class PortfolioComponent {
+  @Input() portfolio!: Portfolio;
 }

@@ -1,9 +1,10 @@
+//barre du milieu
 .main-timeline {
     overflow: hidden;
     position: relative;
     padding: 60px 0;
 }
-
+//barre du milieu
 .main-timeline:before {
     content: "";
     width: 1px;
@@ -14,51 +15,12 @@
     left: 50%;
 }
 
-// app-formation:first-child:before,
-// app-formation:last-child:before {
-//     content: "";
-//     width: 11px;
-//     height: 11px;
-//     background: #cfcdcd;
-//     box-sizing: content-box;
-//     border: 5px solid #fff;
-//     box-shadow: 0 0 0 2px #cfcdcd;
-//     position: absolute;
-//     top: -54px;
-//     right: -11px;
-//     transform: rotate(45deg);
+// .odd{
+//     float: right;
 // }
 
-
-.main-timeline .timeline:hover .timeline-icon:before {
-    background: #39b3ff;
-}
-
-.main-timeline .timeline:hover .timeline-content {
-    border: 1px solid #cfcdcd;
-}
-
-.main-timeline .timeline:hover .timeline-content:before {
-    background: #39b3ff;
-    border-color: #39b3ff;
-}
-
-app-formation:nth-child(even),
-app-formation:nth-child(even) .timeline-content {
-    float: right;
-    text-align: left;
-}
-
-app-formation:nth-child(even) .timeline-icon {
-    right: 0;
-    left: -12px;
-    background-color: red;
-}
-app-formation:nth-child(even) .timeline-content:before {
-    left: -7.3px;
-}
-
-app-formation:nth-child(even) .timeline-content:after {
-    left: -14%;
-}
-
+// .odd .timeline-icon{
+//     background-color: red;
+//     right: 0;
+//     left: -12px;
+// }

@@ -1,0 +1,16 @@
+.date_exp {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    color: #39b3ff;
+    margin: 0 0 8px;
+    transition: all 0.3s ease 0s;
+}
+
+.exp:hover .date_exp {
+    color: #444;
+}
+
+.exp:hover .title_exp {
+    color: #39b3ff;
+}

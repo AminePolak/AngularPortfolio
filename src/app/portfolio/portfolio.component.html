@@ -1,1 +1,16 @@
-<p>portfolio works!</p>
+<!-- <div class="col-6 pt-3 pb-3">
+    <a href="{{portfolio.link}}" onclick="window.open(this.href);return false;">
+        <img src="{{portfolio.image}}" class="picture" alt="portfolio1">
+        <p class="portfolio-description">{{portfolio.description}}</p>
+    </a>
+</div> -->
+
+<div class="wrapper">
+    <div class="image">
+        <img class="img-fluid " src="{{portfolio.image}}" alt="portfolio1">
+        <div class="content">
+            <a href="{{portfolio.link}}" onclick="window.open(this.href);return false;"></a>
+            <p>{{portfolio.description}}</p>
+        </div>
+    </div>
+</div>

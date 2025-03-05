@@ -1,0 +1,6 @@
+<div class="container-fluid ps-5 pt-5 pb-5 experience">
+    <h1 class="text-center pb-5">Expériences</h1>
+    @for (experience of experiences; track $index) {
+    <app-experience [experience]="experience"></app-experience>
+    }
+</div>
