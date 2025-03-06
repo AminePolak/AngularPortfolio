@@ -1,6 +1,8 @@
-<div class="container">
-    <h1 class=" pb-5 pt-5 text-center">Portfolio</h1>
+<div class="text-center pt-5 pb-5" >
+    <h1 class=" pb-5">Portfolio</h1>
+    <ul class="row all-portfolio">
         @for (portfolio of portfolios; track $index) {
-        <app-portfolio class="d-flex" [portfolio]="portfolio"></app-portfolio>
+        <app-portfolio class="col"  [portfolio]="portfolio"></app-portfolio>
         }
+    </ul>
 </div>
