@@ -2,7 +2,7 @@
 .main-timeline {
     overflow: hidden;
     position: relative;
-    padding: 60px 0;
+    padding: 6px 0px;
 }
 
 //barre du milieu
@@ -22,22 +22,31 @@
 }
 
 .start-square {
+    display: block;
     width: 11px;
     height: 11px;
     margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
     background: #cfcdcd;
-   box-sizing: content-box;
-   border: 5px solid #fff;
-   box-shadow: 0 0 0 2px #cfcdcd;
-   transform: rotate(45deg);
+    box-sizing: content-box;
+    border: 5px solid #fff;
+    box-shadow: 0 0 0 2px #cfcdcd;
+    transform: rotate(45deg);
 
- }
-//     border: 1px solid #cfcdcd;
-//     background: #cfcdcd;
-//    box-sizing: content-box;
-//    border: 5px solid #fff;
-//    box-shadow: 0 0 0 2px #cfcdcd;
-//     z-index: 1;
-//     transform: rotate(45deg);
+}
+
+.end-square {
+    display: block;
+    width: 11px;
+    height: 11px;
+
+    margin-left: auto;
+    margin-right: auto;
+    background: #cfcdcd;
+    box-sizing: content-box;
+    border: 5px solid #fff;
+    box-shadow: 0 0 0 2px #cfcdcd;
+    transform: rotate(45deg);
+
+}
