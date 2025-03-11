@@ -1,8 +1,95 @@
 @import 'bootstrap/scss/bootstrap';
 
-body{
+body {
 	padding: 0;
 	margin: 0;
-//    background:white;   
+	//    background:white;   
 }
-/* Importing Bootstrap SCSS file. */
+
+/* FORMATION CSS */
+
+//trait censé etre avant le contenu
+.pair .timeline-content:after {
+	content: "";
+	width: 11%;
+	height: 1px;
+	background: #cfcdcd;
+	position: absolute;
+	top: 28px;
+	right: -14%;
+}
+
+//trait apres content
+.odd .timeline-content:after {
+	content: "";
+	width: 11%;
+	height: 1px;
+	background: #cfcdcd;
+	position: absolute;
+	top: 28px;
+	right: -14%;
+}
+
+//case apres content
+// .odd .timeline-content::before {
+// 	content: "";
+// 	width: 11%;
+// 	height: 1px;
+// 	background: #cfcdcd;
+// 	position: absolute;
+// 	top: 28px;
+// 	right: -14%;
+// }
+
+.odd .timeline-content {
+	float: right;
+	text-align: left;
+}
+
+.odd .timeline-icon {
+	right: 0;
+	left: -12px;
+}
+
+.odd .timeline-content:before {
+	left: -7.3px;
+}
+
+.odd .timeline-content:after {
+	left: -14%;
+}
+
+.odd:before {
+	right: auto;
+	left: -11px;
+}
+
+.odd .description,
+.odd .date,
+.odd .title {
+	text-align: left;
+}
+
+
+
+// POUR METTRE LA CASE EN FIN DE TIMELINE
+// 
+// .main-timeline .timeline:first-child:before,
+// .main-timeline .timeline:last-child:before {
+//    content: "";
+//    width: 11px;
+//    height: 11px;
+//    background: #cfcdcd;
+//    box-sizing: content-box;
+//    border: 5px solid #fff;
+//    box-shadow: 0 0 0 2px #cfcdcd;
+//    position: absolute;
+//    top: -54px;
+//    right: -11px;
+//    transform: rotate(45deg);
+// }
+// .main-timeline .timeline:last-child:before{
+//     top: auto;
+//     bottom: -54px;
+//  }
+
