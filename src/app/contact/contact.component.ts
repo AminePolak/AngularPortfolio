@@ -12,7 +12,8 @@ import { CommonModule, JsonPipe } from '@angular/common';
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
-  fb = inject(FormBuilder)
+  fb = inject(FormBuilder);
+  showSuccessMessage: boolean = false;
 
   form: FormGroup = this.fb.group({
     form_subject: '',
@@ -31,8 +32,8 @@ export class ContactComponent {
       form_email: this.form.value.form_email,
       form_message: this.form.value.form_message,
     });
-
-    alert('Message has been sent.');
+this.showSuccessMessage = true;
+    // alert('Message has been sent.');
     this.form.reset();
   }
 }

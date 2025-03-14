@@ -22,6 +22,8 @@
                         placeholder="Message*" rows="3" required></textarea>
                 </div>
                 <button type="submit" class="btn btn-dark">SEND</button>
+                @if (showSuccessMessage){
+                <span class="text-success ps-5">Message has been sent.</span> }
             </form>
         </div>
         <div class="col-md-4">
