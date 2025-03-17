@@ -1,8 +1,8 @@
-<div class="text-center pt-5 pb-5" >
+<div class="text-center pt-5 pb-5" id="portfolio">
     <h1 class=" pb-5">Portfolio</h1>
     <ul class="row all-portfolio">
         @for (portfolio of portfolios; track $index) {
-        <app-portfolio class="col"  [portfolio]="portfolio"></app-portfolio>
+        <app-portfolio class="col" [portfolio]="portfolio"></app-portfolio>
         }
     </ul>
 </div>

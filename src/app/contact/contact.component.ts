@@ -32,8 +32,7 @@ export class ContactComponent {
       form_email: this.form.value.form_email,
       form_message: this.form.value.form_message,
     });
-this.showSuccessMessage = true;
-    // alert('Message has been sent.');
+    this.showSuccessMessage = true;
     this.form.reset();
   }
 }
