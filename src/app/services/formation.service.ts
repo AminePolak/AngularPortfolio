@@ -6,10 +6,14 @@ import { Formation } from "../models/formation";
 })
 export class formationService {
     private formations: Formation[] = [
-        new Formation("Formation Udemy (by John Taïeb)", "Mars 2019 à aujourd'hui", "En autodidacte", "Lyon",
-            "Formation complète développeur web"),
+        new Formation("Formation .net Udemy", "Depuis janvier 2024", "Autodidacte", "Lyon",
+            "C# 12, .Net 8, ASP .Net, POO, architecture MVC, API Rest full, controller, Linq, sérialisation,Postman..."),
+        new Formation("Certification qualiopi Développeur .net / angular", "Juin à septembre 2021", "Dtek Formation", "Lyon",
+            "Formation sur les technologies .net et Angular, SQL Server,architectures N-tiers, méthodes Agiles."),
+        new Formation("Formation Udemy (by John Taïeb)", "2019 - 2020", "Autodidacte", "Lyon",
+            "Formation complète développeur web : html, css, Js"),
         new Formation("Certification Coder et déployer des applications web simple", "Janvier 2019 à mars 2019", "Simplon", "Ile de la Réunion",
-            "Formation développeur web : HTML, CSS, Bootstrap, Javascript, Jquery, PHP, phpMyAdmin,Laravel, Méthode Agile"),
+            "Formation développeur web : HTML, CSS, Bootstrap, Javascript, Jquery, PHP, PhpMyAdmin,Laravel, Méthode Agile"),
         new Formation("Certification Opquast", "Février 2019", "Simplon", "Ile de la Réunion",
             "Connaissance des fondamentaux des bonnes pratiques qualité Web et des termes du Web. Capacités suffisantes pour comprendre les autres professionnels du Web."),
         new Formation("Formation Développeur Web", "Août 2018 à décembre 2018", "Autodidacte", "Ile de la Réunion",
