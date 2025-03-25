@@ -1,8 +1,9 @@
 <li class="col pt-3 pb-3">
 <a href="{{portfolio.link}}" onclick="window.open(this.href);return false;">
     <div class="image">
-        <img  src="{{portfolio.image}}" alt="portfolio1">
-        <p class="portfolio-description">{{portfolio.description}}</p>
+        <img  src="{{portfolio.image}}" alt="{{portfolio.title}}">
+        
+        <p class="portfolio-description"><span class="text-decoration-underline fs-6">{{portfolio.title}}</span><br><br>{{portfolio.description}}</p>
     </div>
 </a>
 </li>
