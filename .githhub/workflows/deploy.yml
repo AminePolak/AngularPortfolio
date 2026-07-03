@@ -25,7 +25,7 @@ jobs:
         run: npm ci
 
       - name: Build Angular
-        run: ng build --configuration production --base-href "/AminePolak/AngularPortfolio/"
+        run: ng build --configuration production --base-href "/AngularPortfolio/"
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
