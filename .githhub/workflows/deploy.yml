@@ -9,20 +9,25 @@ permissions:
   contents: write
 
 jobs:
-  deploy:
+  build-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repo
+        uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      - run: npm ci
+      - name: Install dependencies
+        run: npm ci
 
-      - run: ng build --configuration production --base-href "/AngularPortfolio/"
+      - name: Build Angular
+        run: ng build --configuration production --base-href "/AngularPortfolio/"
 
-      - uses: JamesIves/github-pages-deploy-action@v4
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: dist/AngularPortfolio
